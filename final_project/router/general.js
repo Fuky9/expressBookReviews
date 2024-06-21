@@ -51,7 +51,7 @@ public_users.get('/title/:title',function (req, res) {
 });
 
 
-//  Get book review
+//  Get book review based on ISBN
 public_users.get('/review/:isbn',function (req, res) {
   const bookIsbn = req.params.isbn;
   if (books.hasOwnProperty(bookIsbn)) {
